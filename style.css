@@ -1,0 +1,145 @@
+body {
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/fond blanc aest.jpg');
+   background-size: cover;
+   font-family: 'Inter', sans-serif;
+    color: #333;
+    margin: ;
+    text-align: center;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px; 
+  letter-spacing: 2px;
+}
+.cool {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.header {
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/canvas card.jpg');
+   background-size: cover;
+   color: white;
+   padding: 60px 0;
+  background-color: #f0f0f0; 
+  
+}
+
+/* Le rectangle blanc principal */
+.main-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Alignement des 3 photos du haut */
+.media-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.img-card {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Style des blocs de texte : SURTOUT PAS DE HEIGHT FIXE */
+.content-block {
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: left; /* Plus lisible pour le texte */
+    border-bottom: 1px solid #eee; /* Petite ligne de séparation */
+}
+
+.content-block h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.navbar {
+  background-color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100; 
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+.footer {
+  height: 100px;
+  background-color: black;
+  background-color: #222;
+  color: white;
+  padding: 40px ;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: surligned;
+}
+
+.list-inline {
+   list-style: none;
+   padding: 0;
+}
+
+.list-inline li {
+   display: inline-block;
+   margin: 0 10px;
+   font-size: 24px;
+}
+
+.list-inline a {
+   color: white;
+}
+ 
+ html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 720px) {
+  .main-container { width: 100%; }
+  .media-row { flex-direction: column; } 
+  .media-row img { margin-bottom: 20px; }
+  #intro-text { width: 90%; }
+  .navbar li {
+   display: block;
+   margin: 10px 0;
+   }
+}
+
+}
